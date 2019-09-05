@@ -17,7 +17,7 @@ namespace WebAPI.Controllers
 {
     public class EmployeesController : ApiController
     {
-        private DBModel db = new DBModel();
+        private DBModels db = new DBModels();
 
         public IEnumerable<Employee> GetEmployees()
         {
@@ -29,13 +29,13 @@ namespace WebAPI.Controllers
             return employee;
         }
         [HttpPost]
-        public void CreateFootballer([FromBody] Employee employee)
+        public void CreateEmployee([FromBody] Employee employee)
         {
             db.Employees.Add(employee);
             db.SaveChanges();
         }
         [HttpPut]
-        public void EditFootballer(int id, [FromBody] Employee employee)
+        public void EditEmployee(int id, [FromBody] Employee employee)
         {
             if (id == employee.EmployeeID)
             {
@@ -44,7 +44,7 @@ namespace WebAPI.Controllers
             }
         }
         [HttpDelete]
-        public void DeleteFootballer(int id)
+        public void DeleteEmployee(int id)
         {
             Employee employee = db.Employees.Find(id);
             if (employee != null)

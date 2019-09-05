@@ -260,20 +260,20 @@
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\DbModel.Context.cs">
+    <Compile Include="Models\DBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DbModel.Context.tt</DependentUpon>
+      <DependentUpon>DBModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DbModel.cs">
+    <Compile Include="Models\DBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DbModel.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DbModel.Designer.cs">
+    <Compile Include="Models\DBModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DbModel.edmx</DependentUpon>
+      <DependentUpon>DBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\DBModels.Context.cs">
       <AutoGen>True</AutoGen>
@@ -291,7 +291,7 @@
       <DependentUpon>DBModels.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Employee.cs">
-      <DependentUpon>DbModel.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -311,15 +311,15 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\DbModel.Context.tt">
+    <Content Include="Models\DBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbModel.edmx</DependentUpon>
-      <LastGenOutput>DbModel.Context.cs</LastGenOutput>
+      <DependentUpon>DBModel.edmx</DependentUpon>
+      <LastGenOutput>DBModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\DbModel.tt">
+    <Content Include="Models\DBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbModel.edmx</DependentUpon>
-      <LastGenOutput>DbModel.cs</LastGenOutput>
+      <DependentUpon>DBModel.edmx</DependentUpon>
+      <LastGenOutput>DBModel.cs</LastGenOutput>
     </Content>
     <Content Include="Models\DBModels.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -364,12 +364,12 @@
     <Content Include="Models\DBModels.edmx.diagram">
       <DependentUpon>DBModels.edmx</DependentUpon>
     </Content>
-    <EntityDeploy Include="Models\DbModel.edmx">
+    <EntityDeploy Include="Models\DBModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DbModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>DBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\DbModel.edmx.diagram">
-      <DependentUpon>DbModel.edmx</DependentUpon>
+    <Content Include="Models\DBModel.edmx.diagram">
+      <DependentUpon>DBModel.edmx</DependentUpon>
     </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

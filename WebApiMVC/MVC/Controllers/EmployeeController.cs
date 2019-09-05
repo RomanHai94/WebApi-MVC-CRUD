@@ -30,5 +30,11 @@ namespace MVC.Controllers
             TempData["SuccessMessage"] = "Save Successfully";
             return RedirectToAction("Index");
         }
+        public ActionResult Delete(int id)
+        {
+            HttpResponseMessage response = GlobalVariables.WebApiClient.DeleteAsync("Employees/" + id.ToString()).Result;
+            TempData["SuccessMessage"] = "Deleted Successfully";
+            return RedirectToAction("Index");
+        }
     }
 }
